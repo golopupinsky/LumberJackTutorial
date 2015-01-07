@@ -13,20 +13,11 @@
 		58AAA0641A5D6BEF00318E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AAA0621A5D6BEF00318E35 /* Main.storyboard */; };
 		58AAA0661A5D6BEF00318E35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AAA0651A5D6BEF00318E35 /* Images.xcassets */; };
 		58AAA0691A5D6BEF00318E35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AAA0671A5D6BEF00318E35 /* LaunchScreen.xib */; };
-		58AAA0751A5D6BEF00318E35 /* LumberJackTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA0741A5D6BEF00318E35 /* LumberJackTutorialTests.m */; };
+		D47844EB8766F0AEAA2B6CB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D453A30A10439E208C68007 /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		58AAA06F1A5D6BEF00318E35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 58AAA04D1A5D6BEF00318E35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 58AAA0541A5D6BEF00318E35;
-			remoteInfo = LumberJackTutorial;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0604D7C9630C1547103F4C3D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		58AAA0551A5D6BEF00318E35 /* LumberJackTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumberJackTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AAA0591A5D6BEF00318E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AAA05A1A5D6BEF00318E35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,9 +28,8 @@
 		58AAA0631A5D6BEF00318E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58AAA0651A5D6BEF00318E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		58AAA0681A5D6BEF00318E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		58AAA06E1A5D6BEF00318E35 /* LumberJackTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumberJackTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58AAA0731A5D6BEF00318E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58AAA0741A5D6BEF00318E35 /* LumberJackTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumberJackTutorialTests.m; sourceTree = "<group>"; };
+		9D453A30A10439E208C68007 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52F7ECE344A917E6C7BD4E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,25 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58AAA06B1A5D6BEF00318E35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D47844EB8766F0AEAA2B6CB2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327CF5A17B0ABEFB0B275AAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0604D7C9630C1547103F4C3D /* Pods.debug.xcconfig */,
+				D52F7ECE344A917E6C7BD4E1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		58AAA04C1A5D6BEF00318E35 = {
 			isa = PBXGroup;
 			children = (
 				58AAA0571A5D6BEF00318E35 /* LumberJackTutorial */,
-				58AAA0711A5D6BEF00318E35 /* LumberJackTutorialTests */,
 				58AAA0561A5D6BEF00318E35 /* Products */,
+				327CF5A17B0ABEFB0B275AAC /* Pods */,
+				E4E23A4A91209D63E465610A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				58AAA0551A5D6BEF00318E35 /* LumberJackTutorial.app */,
-				58AAA06E1A5D6BEF00318E35 /* LumberJackTutorialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,21 +95,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		58AAA0711A5D6BEF00318E35 /* LumberJackTutorialTests */ = {
+		E4E23A4A91209D63E465610A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58AAA0741A5D6BEF00318E35 /* LumberJackTutorialTests.m */,
-				58AAA0721A5D6BEF00318E35 /* Supporting Files */,
+				9D453A30A10439E208C68007 /* libPods.a */,
 			);
-			path = LumberJackTutorialTests;
-			sourceTree = "<group>";
-		};
-		58AAA0721A5D6BEF00318E35 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				58AAA0731A5D6BEF00318E35 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58AAA0781A5D6BEF00318E35 /* Build configuration list for PBXNativeTarget "LumberJackTutorial" */;
 			buildPhases = (
+				0C831227A568292B047F0DA6 /* Check Pods Manifest.lock */,
 				58AAA0511A5D6BEF00318E35 /* Sources */,
 				58AAA0521A5D6BEF00318E35 /* Frameworks */,
 				58AAA0531A5D6BEF00318E35 /* Resources */,
+				9442BB2103CFFB10103BCB1B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,24 +124,6 @@
 			productName = LumberJackTutorial;
 			productReference = 58AAA0551A5D6BEF00318E35 /* LumberJackTutorial.app */;
 			productType = "com.apple.product-type.application";
-		};
-		58AAA06D1A5D6BEF00318E35 /* LumberJackTutorialTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 58AAA07B1A5D6BEF00318E35 /* Build configuration list for PBXNativeTarget "LumberJackTutorialTests" */;
-			buildPhases = (
-				58AAA06A1A5D6BEF00318E35 /* Sources */,
-				58AAA06B1A5D6BEF00318E35 /* Frameworks */,
-				58AAA06C1A5D6BEF00318E35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				58AAA0701A5D6BEF00318E35 /* PBXTargetDependency */,
-			);
-			name = LumberJackTutorialTests;
-			productName = LumberJackTutorialTests;
-			productReference = 58AAA06E1A5D6BEF00318E35 /* LumberJackTutorialTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,10 +136,6 @@
 				TargetAttributes = {
 					58AAA0541A5D6BEF00318E35 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					58AAA06D1A5D6BEF00318E35 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 58AAA0541A5D6BEF00318E35;
 					};
 				};
 			};
@@ -189,7 +153,6 @@
 			projectRoot = "";
 			targets = (
 				58AAA0541A5D6BEF00318E35 /* LumberJackTutorial */,
-				58AAA06D1A5D6BEF00318E35 /* LumberJackTutorialTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,14 +168,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58AAA06C1A5D6BEF00318E35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C831227A568292B047F0DA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		9442BB2103CFFB10103BCB1B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58AAA0511A5D6BEF00318E35 /* Sources */ = {
@@ -225,23 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58AAA06A1A5D6BEF00318E35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58AAA0751A5D6BEF00318E35 /* LumberJackTutorialTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		58AAA0701A5D6BEF00318E35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 58AAA0541A5D6BEF00318E35 /* LumberJackTutorial */;
-			targetProxy = 58AAA06F1A5D6BEF00318E35 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		58AAA0621A5D6BEF00318E35 /* Main.storyboard */ = {
@@ -343,6 +316,7 @@
 		};
 		58AAA0791A5D6BEF00318E35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0604D7C9630C1547103F4C3D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LumberJackTutorial/Info.plist;
@@ -353,45 +327,12 @@
 		};
 		58AAA07A1A5D6BEF00318E35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52F7ECE344A917E6C7BD4E1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LumberJackTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		58AAA07C1A5D6BEF00318E35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LumberJackTutorialTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LumberJackTutorial.app/LumberJackTutorial";
-			};
-			name = Debug;
-		};
-		58AAA07D1A5D6BEF00318E35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LumberJackTutorialTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LumberJackTutorial.app/LumberJackTutorial";
 			};
 			name = Release;
 		};
@@ -414,14 +355,7 @@
 				58AAA07A1A5D6BEF00318E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		58AAA07B1A5D6BEF00318E35 /* Build configuration list for PBXNativeTarget "LumberJackTutorialTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				58AAA07C1A5D6BEF00318E35 /* Debug */,
-				58AAA07D1A5D6BEF00318E35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,14 @@
 //
 
 #import "ViewController.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
 
 @interface ViewController ()
 
@@ -16,12 +24,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)info:(id)sender {
+    DDLogInfo(@"Info");
+}
+- (IBAction)warn:(id)sender {
+    DDLogWarn(@"Warn");
+}
+- (IBAction)error:(id)sender {
+    DDLogError(@"Error");
+}
+- (IBAction)verbose:(id)sender {
+    DDLogVerbose(@"Verbose");
+}
+- (IBAction)debug:(id)sender {
+    DDLogDebug(@"Debug");
+}
+
 
 @end
